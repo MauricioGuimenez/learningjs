@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript!</title>
+    <style>
+      .tateti{
+        width: 60px;
+        height: 60px;
+      }
+
+      h1{
+        text-align: center;
+      }
+      .centrar {
+
+        text-align: center;
+      }
+
+      .resultado{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    
+<!-- 
+ <script>
+  var vec1 = [10,20,30,40];
+  var vec2 = [50,60,70,80];
+  var vecsuma = vec1.concat(vec2);
+  document.write(vec1.join(' - '));
+  document.write('<br>');
+  document.write(vec2.join(' - '));
+  document.write('<br>');
+  document.write('<h3 style="text-align: center;"> Concatenados</h3>');
+   document.write(vecsuma.join(' - '));
+  
+ </script>   --> 
+<!-- <script>
+  var valores = new Array(10);
+
+  for (var i = 0; i < valores.length; i++) {
+         valor = parseInt(prompt('Ingresar valor '+[i]+': '+'<br>','')); 
+          valores[i] = valor;
+  }
+ var metodostring = valores.toString();
+ var metodojoin = valores.join();
+
+ if (metodojoin == metodostring) {
+    document.write('son iguales los dos string');
+ }else {document.write('NO son iguales los dos string');}
+
+
+</script> -->
+
+
+<!-- <script>
+  var vec=[1,2,3,4,5,6,7,8,9,10];
+  var imprimir = vec.toString();
+
+  console.log(vec);
+</script> -->
+
+<!-- <script>
+    var vec = [10, 20, 30, 40, 50];
+    vec.forEach(function (x, y) {
+      document.write('Posición: ' + y + ' = ');
+      document.write(x + '<br>');
+    })
+  </script> -->
+
+
+<!-- <div id="div1"></div>
+<script type="text/javascript">
+    
+    function generarListaOrdenada(vec){
+
+    function comienzo(){
+      s='<ol>';
+    }
+  
+    function fin(){
+      s=s+'</ol>';
+    }
+    
+    var s='';
+    comienzo();
+    var f;
+    for(f=0;f<vec.length;f++)
+    {
+      s=s+'<li>'+vec[f]+'</li>';
+    }
+    fin();
+    return s;
+  }
+
+  onload=function() {
+    var opciones=['Opción a','Opción b','Opción c','Opción d'];
+    document.getElementById('div1').innerHTML=generarListaOrdenada(opciones);
+  }
+
+
+</script> -->
+<!-- <script>
+ 
+ function f1(x){
+  var vlocal = 'Hola';
+
+  function f2(y) {
+
+      document.write('Parámetro de la función anidada: '+y+'<br>');
+      document.write('Parámetro de la función principal: '+x+'<br>');
+      document.write('variable local de la función principal: '+vlocal);
+  }
+
+  f2(200);
+  return vlocal;
+ }
+ 
+ f1(100);
+ document.write('variable local de la función principal: 2'+vlocal);
+
+</script> -->
+
+<!-- <div style="width:200px;height:200px;background:#ffff00" id="recuadro1">
+    Prueba del evento click
+  </div>
+  <div style="width:200px;height:200px;background:#ff5500" id="recuadro2">
+    Prueba del evento dblclick
+  </div> 
+
+  <script>
+    addEventListener('DOMContentLoaded',inicio,false);
+
+    function inicio(){
+      document.getElementById('recuadro1').addEventListener('click',presion1,false);
+      document.getElementById('recuadro2').addEventListener('dblclick',presion2,false);
+    }
+
+    function presion1(){
+      alert('Se hizo un click');
+    }
+
+    function presion2(){
+      alert('Se hizo doble click');
+    }
+  </script> -->
+
+ <!--  <div id="duplicar">2</div>
+
+  <script>
+    addEventListener('DOMContentLoaded',inicio,false);
+
+    function inicio(){
+      document.getElementById('duplicar').addEventListener('dblclick',duplicar,false);
+    }
+
+    function duplicar(){
+      var valor = document.getElementById('duplicar').innerHTML;
+
+      valor = parseInt(valor);
+      var resu = valor * 2;
+      document.getElementById('duplicar').innerHTML = resu;
+    }
+  </script> -->
+
+  <!-- <p>Presione el recuadro amarillo sin soltar el botón del mouse.</p>
+  <div style="width:200px;height:200px;background:#ffff00" id="recuadro1">
+  </div>
+  <p>Presione el recuadro naranja y suelte el botón del mouse.</p>
+  <div style="width:200px;height:200px;background:#ff5500" id="recuadro2">
+  </div>
+
+<script>
+  addEventListener('DOMContentLoaded',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('recuadro1').addEventListener('mousedown',presion1,false);
+    document.getElementById('recuadro2').addEventListener('mouseup',presion2,false);
+  }
+
+  function presion1()
+  {
+    document.getElementById('recuadro1').innerHTML='Se presione el mouse y todavía no se soltó';
+  }
+
+  function presion2()
+  {
+    document.getElementById('recuadro2').innerHTML='Se presione el mouse y se soltó';
+  }
+</script> -->
+
+<!-- <div style="background-color: #ff0000; width: 200px; height: 200px" id="cuadro"></div>
+<script>
+  addEventListener('DOMContentLoaded',inicio,false);
+
+  function inicio(){
+
+    document.getElementById('cuadro').addEventListener('mousedown',amarillo,false);
+    document.getElementById('cuadro').addEventListener('mouseup',rojo,false);
+  }
+
+  function amarillo(){
+    document.getElementById('cuadro').style.background='#ffff00';
+  }
+  function rojo(){
+    document.getElementById('cuadro').style.background='#ff0000';
+    //document.getElementById('cuadro').style.width='100%';
+  }
+</script> -->
+
+<!-- <h1 style="font-size: 16; " id="mod">Hola! Mi nombre es Mauricio Guimenez</h1>
+<script>
+  addEventListener('DOMContentLoaded',inicio,false);
+  function inicio(){
+    document.getElementById('mod').addEventListener('mouseover',mod2,false);
+    document.getElementById('mod').addEventListener('mouseout',mod3,false);
+  }
+
+  function mod2(){
+    document.getElementById('mod').style.color = '#f00';
+    document.getElementById('mod').style.background = '#ff0';
+  }
+  function mod3(){
+    document.getElementById('mod').style.color = '#000';
+    document.getElementById('mod').style.background = '#fff';
+  }
+
+</script>
+ -->
+<!-- div style="background-color: #0000ff; width: 200px; height: 200px" id="cuadro"></div>
+<p id="contador">0</p>
+<script>
+  addEventListener('DOMContentLoaded',inicio,false);
+
+  function inicio(){
+
+    document.getElementById('cuadro').addEventListener('mousemove',contar,false);
+  
+  }
+
+  function contar(){
+    var x = document.getElementById('contador').innerHTML;
+    x = parseInt(x);
+    x++;
+    document.getElementById('contador').innerHTML = x;
+  }
+</script>  -->
+
+<!-- <h1 style="color: #ff0000; font-family: verdana;" id="saludo">Hola Bienvenidos!</h1>
+<input type="button" value="Presione" onclick="presion()">
+<script>
+  // addEventListener('DOMContentLoaded',inicio,false);
+  // function inicio(){
+  //   document.getElementById('saludo').innerHTML = ;
+  // }
+
+ function presion(){
+  
+    var nombre = 'Mauricio';
+    var apellido = ' Guimenez';
+    document.getElementById('saludo').innerHTML = nombre + apellido;
+  }
+</script> -->
+
+
+<!-- <input type="text" id="texto" maxlength="140" size="140">
+<p>Máxima cantidad de carácteres: <span id="cantidad">140</span></p>
+<script>
+ addEventListener("DOMContentLoaded",inicio,false);
+
+ function inicio(){
+     var text = document.getElementById('texto');
+     text.addEventListener('keyup',cantidadcaract,false);
+ }
+
+ function cantidadcaract(){
+    var cant = document.getElementById('texto').value.length;
+    var result = parseInt(140 - cant);
+    document.getElementById('cantidad').innerHTML = result;
+ }
+</script> -->
+
+<!-- <input type="text" id="uno" size="30" name="uno">
+<br>
+<input type="text" id="dos" size="30" name="dos">
+<script>
+  addEventListener('DOMContentLoaded',inicio,false);
+   
+   var textuno = document.getElementById('uno');
+   var textdos = document.getElementById('dos');
+  function inicio(){
+      textuno.addEventListener('focus',enfoco,false);
+      textdos.addEventListener('focus',enfoco2,false);
+      textuno.addEventListener('blur',fueradefoco,false);
+      textdos.addEventListener('blur',fueradefoco2,false);
+
+  }
+
+  function enfoco(){
+     
+      textuno.style.color='red';
+
+  }
+  function enfoco2(){
+     
+      textdos.style.color='red';
+   
+  }
+
+  function fueradefoco(){
+     
+      textuno.style.color='#000';
+   
+  }
+  function fueradefoco2(){
+     
+      textdos.style.color='#000';
+   
+  }
+</script> -->
+
+
+<!--   <input type="button" id="boton0" name="boton0" value="0" class="boton">
+  <input type="button" id="boton1" name="boton1" value="1" class="boton">
+  <input type="button" id="boton2" name="boton2" value="2" class="boton">
+  <input type="button" id="boton3" name="boton3" value="3" class="boton">
+  <input type="button" id="boton4" name="boton4" value="4" class="boton">
+  <input type="button" id="boton5" name="boton5" value="5" class="boton">
+  <input type="button" id="boton6" name="boton6" value="6" class="boton">
+  <input type="button" id="boton7" name="boton7" value="7" class="boton">
+  <input type="button" id="boton8" name="boton8" value="8" class="boton">
+  <input type="button" id="boton9" name="boton9" value="9" class="boton">
+  <br>
+  <div id="resultado"></div>
+<script>
+  window.addEventListener('DOMContentLoaded', inicio, false);
+
+  function inicio() {
+    for (var x = 0; x <= 9; x++) {
+      document.getElementById('boton' + x).addEventListener('click', presion, false);
+    }
+  }
+
+  function presion(evt) {
+    document.getElementById('resultado').innerHTML =
+      document.getElementById('resultado').innerHTML + evt.target.value;
+  }
+</script> -->
+
+
+<h1>Tablero TaTeTi</h1>
+<div class="centrar">
+<input type="button" value="" id="btn0" name="" class="tateti">
+<input type="button" value="" id="btn1" name="" class="tateti">
+<input type="button" value="" id="btn2" name="" class="tateti">
+<br>
+<input type="button" value="" id="btn3" name="" class="tateti">
+<input type="button" value="" id="btn4" name="" class="tateti">
+<input type="button" value="" id="btn5" name="" class="tateti">
+<br>
+<input type="button" value="" id="btn6" name="" class="tateti">
+<input type="button" value="" id="btn7" name="" class="tateti">
+<input type="button" value="" id="btn8" name="" class="tateti">
+<div class="resultado"></div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded',inicio,false);
+
+  function inicio(){
+     
+     for (var x=0; x <= 9; x++){
+
+         document.getElementById('btn'+x).addEventListener('click',presion,false);
+
+     }
+
+  }
+ 
+
+</script>
+</body>
+</html>
